@@ -43,7 +43,7 @@ This project analyzes price trends in e-commerce platforms using SQL, Python, an
 │   │   └── dynamic_query_delta_report_suggestion_v2.sql
 │
 ├── dashboard/
-│   └── E-commerce-dashboard.twb
+│   └── E-commerce-dashboard.py
 │
 ├── README.md
 ```
@@ -52,16 +52,15 @@ This project analyzes price trends in e-commerce platforms using SQL, Python, an
 - **Data**: Raw and processed datasets for analysis.
 - **Notebooks**: Data cleaning, validation, and scalable processing (Spark).
 - **SQL**: Scripts for ingestion, cleaning, schema, performance tuning, procedures, and dynamic pricing analysis.
-- **Dashboard**: Tableau workbook for visualization.
+- **Dashboard**: Plotly Dash for visualization.
 
 ## Usage
 1. Load and clean data using notebooks.
 2. Ingest and validate data using SQL scripts.
 3. Analyze price trends and dynamic pricing with advanced SQL queries.
-4. Visualize results in Tableau dashboard.
+4. Visualize results in Plotly dashboard.
 
 ## Notes
 - All code and data are organized for clarity and maintainability.
 - Only the latest versions of scripts are retained.
 - Update paths in notebooks and scripts if you move files.
-
