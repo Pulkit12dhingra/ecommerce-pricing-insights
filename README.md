@@ -1,5 +1,7 @@
 # Price Trends in e-Commerce
 
+[Blog Post](https://pulkit12dhingra.github.io/Blog/content/Pricing_Insights_Blog.html)
+
 ## Project Overview
 This project analyzes price trends in e-commerce platforms using SQL, Python, and Tableau. It is organized for modularity, maintainability, and industrial standards.
 
