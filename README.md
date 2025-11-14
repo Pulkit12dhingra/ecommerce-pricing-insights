@@ -1,74 +1,65 @@
-# Dynamic Pricing Trends in E-Commerce
+# Price Trends in e-Commerce
 
-This project analyzes dynamic pricing trends in e-commerce using datasets from Kaggle and eBay. The analysis includes data cleaning, validation, and advanced analysis using Apache Spark.
+## Project Overview
+This project analyzes price trends in e-commerce platforms using SQL, Python, and Tableau. It is organized for modularity, maintainability, and industrial standards.
 
-## Project Structure
+## Directory Structure
+```
+/Price_Trends_in_e-Commerce
+│
+├── data/
+│   ├── raw/
+│   │   └── ebay_cleaned_dataset.csv
+│   ├── processed/
+│   │   └── ebay_cleaned_with_extracted_brands.csv
+│
+├── notebooks/
+│   ├── apache_spark.ipynb
+│   ├── Data_check.ipynb
+│   └── Data_cleaning_code.ipynb
+│
+├── sql/
+│   ├── ingestion/
+│   │   ├── create_tables_2.sql
+│   │   ├── ingest_data_1.sql
+│   │   ├── ingest_data_each_table_100k.sql
+│   │   ├── ingest_data_each_table_3.sql
+│   │   └── insert_new_data.sql
+│   ├── cleaning/
+│   │   ├── data_table_check_v2.sql
+│   │   └── data_warehouse_validation.sql
+│   ├── schema/
+│   │   └── data_warehouse_schema_v2.sql
+│   ├── performance/
+│   │   └── performance_tuning_2.sql
+│   ├── procedures/
+│   │   └── stored_procedures.sql
+│   ├── dynamic_pricing/
+│   │   ├── dynamic_pricing_model_v2.sql
+│   │   ├── dynamic_pricing_query_4_v2.sql
+│   │   ├── dynamic_pricing_query_5_v2.sql
+│   │   └── dynamic_query_delta_report_suggestion_v2.sql
+│
+├── dashboard/
+│   └── E-commerce-dashboard.twb
+│
+├── README.md
+```
 
-- `dynamic_query_delta_report_suggestion.sql`: SQL queries for delta report suggestions.
-- `dynamic_pricing_query_5.sql`: SQL queries for dynamic pricing analysis.
-- `dynamic_pricing_query_4.sql`: SQL queries for dynamic pricing analysis.
-- `dynamic_pricing_model.sql`: SQL model for dynamic pricing.
-- `data_warehouse_validation.sql`: SQL queries for data warehouse validation.
-- `data_warehouse_schema.sql`: SQL schema for the data warehouse.
-- `data_table_check.sql`: SQL queries for data table checks.
-- `Data_cleaning_code.ipynb`: Jupyter notebook for data cleaning.
-- `Data_check.ipynb`: Jupyter notebook for data checking.
-- `apache_spark.ipynb`: Jupyter notebook for Apache Spark analysis.
-
-## Setup Instructions
-
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/Dynamic-Pricing-Trends-in-E-Commerce.git
-    cd Dynamic-Pricing-Trends-in-E-Commerce
-    ```
-
-2. Install the required Python packages:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-3. Set up Apache Spark:
-    ```sh
-    pip install pyspark
-    pip install findspark
-    ```
-
-4. Initialize Spark in your Jupyter notebook:
-    ```python
-    import findspark
-    findspark.init()
-    ```
+## Workflow
+- **Data**: Raw and processed datasets for analysis.
+- **Notebooks**: Data cleaning, validation, and scalable processing (Spark).
+- **SQL**: Scripts for ingestion, cleaning, schema, performance tuning, procedures, and dynamic pricing analysis.
+- **Dashboard**: Tableau workbook for visualization.
 
 ## Usage
+1. Load and clean data using notebooks.
+2. Ingest and validate data using SQL scripts.
+3. Analyze price trends and dynamic pricing with advanced SQL queries.
+4. Visualize results in Tableau dashboard.
 
-### Data Cleaning
-
-Run the `Data_cleaning_code.ipynb` notebook to clean the datasets.
-
-### Data Validation
-
-Run the `data_warehouse_validation.sql` script to validate the data warehouse.
-
-### Dynamic Pricing Analysis
-
-Run the `dynamic_pricing_query_4.sql` and `dynamic_pricing_query_5.sql` scripts for dynamic pricing analysis.
-
-### Apache Spark Analysis
-
-Run the `apache_spark.ipynb` notebook for advanced analysis using Apache Spark.
-
-### Save Results for Tableau
-
-Save the results to CSV files for further analysis in Tableau:
-```python
-# Save to CSV for Tableau
-joined_df.write.csv("output/joined_analysis", header=True, mode="overwrite")
-
-# Save aggregated revenue analysis
-joined_df.groupBy("brand").agg(
-    sum(joined_df["ebay_price"]).alias("total_ebay_revenue"),
-    sum(joined_df["kaggle_price"]).alias("total_kaggle_revenue")
-).write.csv("output/revenue_analysis", header=True, mode="overwrite")
-```
+## Notes
+- All code and data are organized for clarity and maintainability.
+- Only the latest versions of scripts are retained.
+- Update paths in notebooks and scripts if you move files.
 

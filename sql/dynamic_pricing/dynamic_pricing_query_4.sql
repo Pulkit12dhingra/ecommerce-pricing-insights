@@ -1,3 +1,8 @@
+-- =============================================================
+-- Overview: Grab bag of advanced SQL patterns (joins, windowing, OLAP rollups)
+-- used to vet the transactional layer. The sections that follow walk through
+-- each requirement so the same script can double as lecture/demo material.
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about testing the data on topics such as

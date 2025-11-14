@@ -1,3 +1,8 @@
+-- =============================================================
+-- Overview: Demonstrates denormalized history tracking via triggers. Sections
+-- outline the audit table, per-operation triggers, and regression tests so you
+-- can trace every order mutation and safely enable cascading deletes.
+-- =============================================================
 -- CS799 Advanced DBMS Term Project --- 
 -- Pulkit Dhingra -- 
 -- This code file is about testing the data on topic: Denormalization

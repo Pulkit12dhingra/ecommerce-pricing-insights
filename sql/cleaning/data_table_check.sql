@@ -1,3 +1,9 @@
+-- =============================================================
+-- Overview: Quick validation script that peeks into every transactional table
+-- and patches obvious data quality gaps (e.g., missing descriptions, malformed
+-- seller ratings). Use it after ingestion to spot-check integrity before the
+-- warehouse build begins.
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 --- check each table and fill null values

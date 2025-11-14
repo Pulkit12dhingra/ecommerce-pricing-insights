@@ -1,3 +1,9 @@
+-- =============================================================
+-- Overview: Defines the star-schema (sales fact + time dimension) and the temp
+-- staging helpers used to move curated transactional data into analytics-ready
+-- shapes. The surrounding queries document why each index, staging table, and
+-- cleanup step exists before populating the main `sales` table.
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about creating tables for a data warehouse star schema

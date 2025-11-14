@@ -1,3 +1,9 @@
+-- =============================================================
+-- Overview: Stress-tests analytical patterns on sampled (100k) and larger (1M)
+-- staging subsets. The notes in each block explain what the query measures
+-- (e.g., category density, user funnel behavior) so you can compare runtimes
+-- and evaluate indexing strategies for massive workloads.
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about performance tuning - part 2 

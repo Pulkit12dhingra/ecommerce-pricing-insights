@@ -1,3 +1,9 @@
+-- =============================================================
+-- Overview: Central catalog of operational procedures—incremental loads, data
+-- validation, daily summaries, and materialized-view refreshes. Each procedure
+-- wraps the manual SQL steps used elsewhere so BI refreshes can be automated
+-- or scheduled without retyping the underlying statements.
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about stored procedures for data warehouse

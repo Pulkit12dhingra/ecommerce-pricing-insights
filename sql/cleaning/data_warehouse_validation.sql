@@ -1,3 +1,9 @@
+-- =============================================================
+-- Overview: Post-build verification for the warehouse layer. The script first
+-- checks referential fidelity, then creates indexes, summary tables, and
+-- materialized views that surface platform trends, category leaders, and
+-- high-value orders. Run it after loading the sales fact to validate results.
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about data warehouse validation

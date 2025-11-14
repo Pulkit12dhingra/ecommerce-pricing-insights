@@ -1,3 +1,9 @@
+-- =============================================================
+-- Overview: Loads raw Kaggle and eBay exports into lightweight staging tables
+-- so they can be inspected, profiled, and transformed without touching the
+-- production tables. Copy commands assume files already live in PostgreSQL's
+-- data directory; update the absolute paths if the environment differs.
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about ingesting data into staging tables

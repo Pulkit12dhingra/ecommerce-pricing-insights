@@ -1,3 +1,9 @@
+-- =============================================================
+-- Overview: Resets the transactional schema, samples 100k Kaggle rows, and
+-- incrementally hydrates each dimension/fact table. Each logical block below
+-- focuses on a single entity so the load order mirrors the FK dependencies
+-- (brands/categories -> products -> prices -> users/orders -> events).
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about creating intermediate staging table(100k) as the kaggle data is 18M

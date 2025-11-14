@@ -1,3 +1,9 @@
+-- =============================================================
+-- Overview: Bootstraps the normalized OLTP schema that powers downstream
+-- ingestion. Tables are created in dependency order so that each foreign key
+-- is satisfied before it is referenced in later INSERT scripts. Run this once
+-- on a clean database before loading any data.
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about creating tables based on the ERD diagram I designed

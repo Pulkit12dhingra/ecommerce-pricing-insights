@@ -1,3 +1,8 @@
+-- =============================================================
+-- Overview: Builds the analytic table/materialized view that compares eBay vs
+-- Kaggle pricing by category and brand. The calculated columns (average, median,
+-- deltas, action flags) feed the dashboard and recommendation storyline.
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about dynamic pricing model for the ecommerce project

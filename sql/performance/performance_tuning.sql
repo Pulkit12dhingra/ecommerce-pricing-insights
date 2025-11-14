@@ -1,3 +1,9 @@
+-- =============================================================
+-- Overview: Documents the before/after tuning journey for a representative
+-- order lookup query. Index maintenance, composite keys, and ranking examples
+-- are grouped so you can measure impact (via EXPLAIN/plan cache) after each
+-- optimization pass.
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about performance tuning

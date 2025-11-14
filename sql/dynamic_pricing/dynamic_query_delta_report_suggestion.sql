@@ -1,3 +1,8 @@
+-- =============================================================
+-- Overview: Implements the delta-report query requested during review. Layered
+-- CTEs carve out the target category, enrich it with pricing context, and then
+-- surface the final rowset ordered by purchase date for easy export.
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about testing the data on a query(as suggested to be added in delta report)

@@ -1,3 +1,9 @@
+-- =============================================================
+-- Overview: Similar to the 100k loader but operates on the full dataset. The
+-- comments in each section explain how staging data flows into the production
+-- tables, along with fixes (type updates, constraint resets) required to keep
+-- referential integrity intact at scale.
+-- =============================================================
 -- CS799 Advanced DBMS Term Project --- 
 -- Pulkit Dhingra -- 
 -- This code file is about ingesting data in respective tables based on the ERD diagram I designed

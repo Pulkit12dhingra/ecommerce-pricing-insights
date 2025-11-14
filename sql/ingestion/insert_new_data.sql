@@ -1,3 +1,9 @@
+-- =============================================================
+-- Overview: Seeds the warehouse-level `sales` fact with deterministic sample
+-- rows so dashboards and stored procedures can be demoed live. After the bulk
+-- INSERT statements a set of orchestration procedures is executed to prove
+-- the incremental pipeline (load, validate, summarize, refresh views).
+-- =============================================================
 -- Price Trends in e-commerce --- 
 -- Pulkit Dhingra -- 
 -- This code file is about insertion of new data and verify how the code works for newly inserted data
